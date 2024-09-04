@@ -1,14 +1,82 @@
 [
     {
-        "Id": "001",
-        "Color": "pink",
-        "Brand": "masda",
-        "OwnerId": "100"
+        "Id": "C001",
+        "Color": "Red",
+        "Brand": "Toyota",
+        "OwnerIds": [
+            "CUST001"
+        ]
     },
     {
-        "Id": "002",
-        "Color": "red",
-        "Brand": "mercades",
-        "OwnerId": "200"
+        "Id": "C002",
+        "Color": "Blue",
+        "Brand": "Honda",
+        "OwnerIds": [
+            "CUST002"
+        ]
+    },
+    {
+        "Id": "C003",
+        "Color": "Green",
+        "Brand": "Ford",
+        "OwnerIds": [
+            "CUST003"
+        ]
+    },
+    {
+        "Id": "C004",
+        "Color": "Yellow",
+        "Brand": "Chevrolet",
+        "OwnerIds": [
+            "CUST004"
+        ]
+    },
+    {
+        "Id": "C005",
+        "Color": "Black",
+        "Brand": "Nissan",
+        "OwnerIds": [
+            "CUST005"
+        ]
+    },
+    {
+        "Id": "C006",
+        "Color": "White",
+        "Brand": "BMW",
+        "OwnerIds": [
+            "CUST006"
+        ]
+    },
+    {
+        "Id": "C007",
+        "Color": "Gray",
+        "Brand": "Audi",
+        "OwnerIds": [
+            "CUST007"
+        ]
+    },
+    {
+        "Id": "C008",
+        "Color": "Purple",
+        "Brand": "Kia",
+        "OwnerIds": [
+            "CUST008"
+        ]
+    },
+    {
+        "Id": "C009",
+        "Color": "Orange",
+        "Brand": "Hyundai",
+        "OwnerIds": [
+            "CUST009"
+        ]
+    },
+    {
+        "Id": "C010",
+        "Color": "Brown",
+        "Brand": "Mazda",
+        "OwnerIds": [
+            "CUST010"
+        ]
     }
 ]
