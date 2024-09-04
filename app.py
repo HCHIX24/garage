@@ -49,7 +49,7 @@ def add_car(cars, customers):
 
     color = input("Enter Car Color: ")
     brand = input("Enter Car Brand: ")
-    owner_id = input("Enter Owner ID (leave empty if new customer needed): ")
+    owner_id = input("Enter Owner ID (Press Enter if new customer needed): ")
     
     if owner_id:
         # Check if the customer exists
@@ -161,7 +161,7 @@ def main():
     customers = load_data(customer_filename)
     while True:
         clear_screen()
-        print("Pink and Cute Garage")
+        print("Pink Garage")
         print("====================")
         for option in MenuOptions:
             print(f"{option.value} - {option.name.replace('_', ' ').title()}")
