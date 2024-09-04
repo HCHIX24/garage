@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINI's Market</title>
+    <link rel="stylesheet" href="styling.css/market.css">
+    
+</head>
+<body>
+    <header>
+        <header>
+            <!-- ... existing code ... -->
+            <div id="cartItemsContainer" style="display:none;">
+                <h2>Your Cart</h2>
+                <div id="cartItems"></div>
+                <button onclick="clearCart()">Clear Cart</button>
+            </div>
+        </header>
+        
+        <div class="header-top">
+            <h1>MINI's Market</h1>
+            <div class="search-cart">
+                <input type="text" placeholder="Search for products...">
+                <button class="cart-button" id="cartBtn">🛒 Cart ($0.00)</button>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#dairySection"><button id="dairyBtn">🥛 Dairy</button></a></li>
+                <li><a href="#bakerySection"><button id="bakeryBtn">🍞 Bakery</button></a></li>
+                <li><a href="#meatsSection"><button id="meatsBtn">🍖 Meats</button></a></li>
+                <li><a href="#sweetsSection"><button id="sweetsBtn">🍬 Sweets</button></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="content">
+            <h2>Welcome to our market</h2>
+            <p>100% savings!</p>
+            <div id="categories">
+                <!-- Dairy Section -->
+                <div id="dairySection" class="category">
+                    <h3>🥛 Dairy</h3>
+                    <div class="products-grid">
+                        <div class="item dairy" onclick="addToCart('Fresh Milk', 2.99)">
+                            <img src="milk.jpg" alt="Milk">
+                            <h4>Fresh Milk</h4>
+                            <p>$2.99</p>
+                        </div>
+                        <div class="item dairy" onclick="addToCart('Cheddar Cheese', 4.99)">
+                            <img src="cheese.jpg" alt="Cheddar Cheese">
+                            <h4>Cheddar Cheese</h4>
+                            <p>$4.99</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bakery Section -->
+                <div id="bakerySection" class="category">
+                    <h3>🍞 Bakery</h3>
+                    <div class="products-grid">
+                        <div class="item bakery" onclick="addToCart('Fresh Bread', 1.99)">
+                            <img src="bread.jpg" alt="Bread">
+                            <h4>Fresh Bread</h4>
+                            <p>$1.99</p>
+                        </div>
+                        <div class="item bakery" onclick="addToCart('Butter Croissant', 2.49)">
+                            <img src="croissant.jpg" alt="Croissant">
+                            <h4>Butter Croissant</h4>
+                            <p>$2.49</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Meats Section -->
+                <div id="meatsSection" class="category">
+                    <h3>🍖 Meats</h3>
+                    <div class="products-grid">
+                        <div class="item meats" onclick="addToCart('Ribeye Steak', 12.99)">
+                            <img src="steak.jpg" alt="Steak">
+                            <h4>Ribeye Steak</h4>
+                            <p>$12.99</p>
+                        </div>
+                        <div class="item meats" onclick="addToCart('Whole Chicken', 8.99)">
+                            <img src="chicken.jpg" alt="Chicken">
+                            <h4>Whole Chicken</h4>
+                            <p>$8.99</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sweets Section -->
+                <div id="sweetsSection" class="category">
+                    <h3>🍬 Sweets</h3>
+                    <div class="products-grid">
+                        <div class="item sweets" onclick="addToCart('Dark Chocolate', 3.99)">
+                            <img src="chocolate.jpg" alt="Chocolate">
+                            <h4>Dark Chocolate</h4>
+                            <p>$3.99</p>
+                        </div>
+                        <div class="item sweets" onclick="addToCart('Cupcake', 1.99)">
+                            <img src="cupcake.jpg" alt="Cupcake">
+                            <h4>Cupcake</h4>
+                            <p>$1.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="#">Contact Us</a> |
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Returns & Refunds</a>
+        </div>
+        <p>&copy; 2024 MINI's Market. All rights reserved.</p>
+    </footer>
+    <script>
+
+        let cartTotal = 0.00;
+
+        function addToCart(product, price) {
+            cartTotal += price;
+            document.getElementById('cartBtn').innerHTML = `🛒 Cart ($${cartTotal.toFixed(2)})`;
+            alert(`${product} added to cart!`);
+        }
+    </script>
+    <script src="javascript.js/market.js"></script>
+</body>
+</html>

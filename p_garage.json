@@ -1,0 +1,14 @@
+[
+    {
+        "Id": "001",
+        "Color": "pink",
+        "Brand": "masda",
+        "OwnerId": "100"
+    },
+    {
+        "Id": "002",
+        "Color": "red",
+        "Brand": "mercades",
+        "OwnerId": "200"
+    }
+]
