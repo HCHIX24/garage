@@ -1,17 +1,12 @@
 [
-    {
-        "Id": "003",
-        "Name": "sally",
-        "Email": "sally@bb.com"
-    },
-    {
-        "Id": "hunny",
-        "Name": "honey@g.com",
-        "Email": "8"
-    },
-    {
-        "Id": "300",
-        "Name": "hunny",
-        "Email": "h@g.com"
-    }
+    {"Id": "CUST001", "Name": "Alice Johnson", "Email": "alice.johnson@example.com"},
+    {"Id": "CUST002", "Name": "Bob Smith", "Email": "bob.smith@example.com"},
+    {"Id": "CUST003", "Name": "Charlie Brown", "Email": "charlie.brown@example.com"},
+    {"Id": "CUST004", "Name": "Diana Prince", "Email": "diana.prince@example.com"},
+    {"Id": "CUST005", "Name": "Evan Davis", "Email": "evan.davis@example.com"},
+    {"Id": "CUST006", "Name": "Fiona Green", "Email": "fiona.green@example.com"},
+    {"Id": "CUST007", "Name": "George Martin", "Email": "george.martin@example.com"},
+    {"Id": "CUST008", "Name": "Hannah Lee", "Email": "hannah.lee@example.com"},
+    {"Id": "CUST009", "Name": "Isaac Wilson", "Email": "isaac.wilson@example.com"},
+    {"Id": "CUST010", "Name": "Jessica Taylor", "Email": "jessica.taylor@example.com"}
 ]
